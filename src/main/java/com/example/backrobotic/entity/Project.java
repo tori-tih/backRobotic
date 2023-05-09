@@ -8,22 +8,17 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
 @Entity
-@Table(name = "news", schema = "public")
+@Table(name = "project", schema = "public")
 @Getter
 @Setter
-public class News {
+public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
     private String description;
-
-    @Temporal(value = TemporalType.DATE)
-    private Date date;
-
 
     private String mainPhoto; //file
 
